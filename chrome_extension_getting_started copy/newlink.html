@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          body {
+              height: 200px;
+              width: 300px;
+              margin-top: 0;
+              margin-bottom: 0;
+          }
+          img {
+            height: 20px;          
+          }
+          .title-text {
+            margin: 1%;
+            margin-right: auto;
+            color: #d97777;
+            font-weight: lighter;
+          }
+          .top-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2%;
+          }
+          .back-arrow-link {
+            text-decoration: none;
+            margin-right: auto;
+          }
+          .main-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            margin: 2%;
+          }
+          .url-component {
+            height: 30px;
+          }
+          .article-type-component {
+            border: none;
+            height: 30px;
+          }
+          .submit-btn {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid #e6a1a1;
+            border-radius: 5px;
+            font-size: 15px;
+            color: #d97777;
+          }
+
+          input:focus {outline:none;}
+          select:focus {outline: none;}
+      </style>
+  </head>
+  <body>
+    <div class="top-container">
+      <a class="back-arrow-link" href="./popup.html"><img src="images/back_arrow.png"/ id="back-button"></a>
+      <h2 id="title-text" class="title-text">Link!</h2>
+    </div>
+    <div class="main-container">
+      <input type="url" id="linked_url" placeholder="Article link" class="url-component">
+      <select class="article-type-component">
+        <option value="opposing">Opposing</option>
+        <option value="similar">Similar</option>
+        <option value="broad">Broad</option>
+      </select>
+      <button id="submit_btn" class="submit-btn">Submit!</button>
+    </div>
+    <script src="newlink.js"></script>
+  </body>
+</html>
